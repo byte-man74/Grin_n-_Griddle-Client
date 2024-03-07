@@ -1,12 +1,13 @@
 import React from "react";
 import { NavigationBar } from "./components/Navigate";
+import AppSection from "./components/AppSection";
 
 function App() {
   return (
-    // main-container
-    <div className="relative flex justify-center w-full pt-4 bg-black min-h-40 flex-column">
+    <AppSection>
       <NavigationBar />
-    </div>
+    </AppSection>
+
   );
 }
 
