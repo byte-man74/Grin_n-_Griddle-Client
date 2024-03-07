@@ -6,7 +6,7 @@ interface AppSectionProps {
 
 const AppSection: React.FC<AppSectionProps> = ({ children }) => {
   return (
-    <div className="relative flex justify-center w-full pt-4 bg-black min-h-40 flex-column">
+    <div className="relative flex justify-center w-full min-h-screen pt-4 bg-backgroundPrimary flex-column">
       {children}
     </div>
   );
