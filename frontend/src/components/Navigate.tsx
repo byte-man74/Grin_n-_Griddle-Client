@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/dark.svg";
+import { motion } from "framer-motion";
 import {
   ContactSvg,
   GetStartedSvg,
@@ -16,13 +17,15 @@ interface NavPayload {
 }
 
 const NavigationLink: React.FC<{ data: NavPayload }> = ({ data }) => (
-  <div
+  <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
     className="flex items-center gap-1.5 text-backgroundPrimary text-md cursor-pointer"
     onClick={() => data.action()}
   >
     {data.icon}
     {data.title}
-  </div>
+  </motion.div>
 );
 
 const navItemsLeft: NavPayload[] = [
