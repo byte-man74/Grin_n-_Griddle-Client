@@ -1,13 +1,9 @@
 import React from "react";
-import { NavigationBar } from "./components/Navigate";
-import AppSection from "./components/AppSection";
+import { LandingPage } from "./pages/landingPage";
 
 function App() {
   return (
-    <AppSection>
-      <NavigationBar />
-    </AppSection>
-
+    <LandingPage />
   );
 }
 
