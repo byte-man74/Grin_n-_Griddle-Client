@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react";
 import { ArrowSvg, FrontIcon } from "../../assets/svg";
-import Button from "../global/button";
 import GradientButton from "../global/button";
 
 interface HeroTextAndCTAProps {
