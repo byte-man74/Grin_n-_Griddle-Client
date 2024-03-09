@@ -105,8 +105,8 @@ export const ContactSvg = () => {
 export const ArrowSvg = () => {
   return (
     <svg
-      width="134"
-      height="51"
+      width="129"
+      height="46"
       viewBox="0 0 134 51"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
