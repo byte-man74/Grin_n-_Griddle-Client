@@ -7,12 +7,12 @@ interface HeroTextAndCTAProps {
 }
 
 const HeroTextAndCTA: React.FC<HeroTextAndCTAProps> = ({ children }) => {
-  return <div className="w-[85%] min-h-10 mt-[70px] flex gap-[0px] justify-center">{children}</div>;
+  return <div className="w-[85%] min-h-10 mt-[70px] flex gap-[0px] justify-center md:flex-col">{children}</div>;
 };
 
 export const HeroText = () => {
   return (
-    <h1 className="text-black w-[600px] text-[50px] font-bold leading-normal">
+    <h1 className="text-black w-[600px] md:w-[90%] md:text-[35px] text-[50px] font-bold leading-normal">
       🌶️ Savor the Spice, Share the Smile!😁
     </h1>
   );
@@ -20,7 +20,7 @@ export const HeroText = () => {
 
 export const HeroCTA = () => {
   return (
-    <div className="flex w-[590px] flex-col gap-[40px]">
+    <div className="flex w-[590px] md:w-[90%] flex-col gap-[40px]">
       <p className="w-[90%] text-black mt-6 leading-normal">
         Spreading Joy, One Bite at a Time. Welcome to the heart and soul of
         delicious dining in Naija style! Dive into a world where flavor dances,
