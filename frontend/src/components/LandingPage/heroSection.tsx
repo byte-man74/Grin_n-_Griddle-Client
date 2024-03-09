@@ -15,7 +15,7 @@ interface HeroTextAndCTAProps {
 
 export const HeroText = () => {
     return (
-        <h1 className="text-black w-[48%] text-[70px] font-bold leading-normal">
+        <h1 className="text-black w-[49%] text-[65px] font-bold leading-normal">
             🌶️ Savor the Spice, Share the Smile! 😁
         </h1>
     )

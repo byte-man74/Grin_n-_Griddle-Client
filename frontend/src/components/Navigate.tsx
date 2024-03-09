@@ -20,7 +20,7 @@ const NavigationLink: React.FC<{ data: NavPayload }> = ({ data }) => (
   <motion.div
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
-    className="flex items-center gap-1.5 text-backgroundPrimary text-md cursor-pointer"
+    className="flex items-center gap-1.5 text-backgroundPrimary text-[14px] cursor-pointer"
     onClick={() => data.action()}
   >
     {data.icon}
