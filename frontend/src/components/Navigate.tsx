@@ -65,7 +65,7 @@ const navItemsRight: NavPayload[] = [
 ];
 
 export const NavigationBar: React.FC = () => (
-  <div className="max-w-[1530px] w-[90%] h-[5rem] bg-black rounded-lg flex justify-center gap-[60px] items-center px-[100px] py-1">
+  <div className="max-w-[1530px] w-[90%] h-[5rem] sm:bg-white bg-black rounded-lg flex justify-center gap-[60px] items-center px-[100px] py-1">
     <div className="w-1/3 max-w-[420px] h-1/2 md:w-1/2 flex items-center justify-start gap-10 py-3">
       {navItemsLeft.map((item, index) => (
         <NavigationLink key={index} data={item} />
