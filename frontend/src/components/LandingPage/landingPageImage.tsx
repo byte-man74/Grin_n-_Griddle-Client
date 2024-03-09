@@ -12,7 +12,7 @@ export const LandingPageImage = () => {
   return (
     <motion.img
       src={Image}
-      className="object-cover w-[100%] h-[450px] max-w-[1530px] bg-black my-14 rounded-lg"
+      className="object-cover w-[100%] h-[450px] md:h-[300px] md:my-2 md:rounded-none md:mt-12 max-w-[1530px] bg-black my-14 rounded-lg"
       alt=""
       variants={animationVariants}
       initial="hidden"
