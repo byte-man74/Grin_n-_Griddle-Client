@@ -13,7 +13,7 @@ const HeroTextAndCTA: React.FC<HeroTextAndCTAProps> = ({ children }) => {
 export const HeroText = () => {
   return (
     <h1 className="text-black w-[600px] text-[50px] font-bold leading-normal">
-      🌶️ Savor the Spice, Share the Smile! 😁
+      🌶️ Savor the Spice, Share the Smile!😁
     </h1>
   );
 };
