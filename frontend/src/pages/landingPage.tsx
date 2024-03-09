@@ -5,6 +5,7 @@ import HeroTextAndCTA, {
   HeroCTA,
   HeroText,
 } from "../components/LandingPage/heroSection";
+import { LandingPageImage } from "../components/LandingPage/landingPageImage";
 
 export const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ export const LandingPage = () => {
         <HeroText />
         <HeroCTA />
       </HeroTextAndCTA>
+      <LandingPageImage />
     </AppSection>
   );
 };
