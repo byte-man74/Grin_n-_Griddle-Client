@@ -1,7 +1,6 @@
-import React, { ReactNode, CSSProperties } from 'react';
-
+import React, { ReactNode, CSSProperties } from "react";
+import { motion } from "framer-motion";
 interface ButtonProps {
-  background?: string;
   children: ReactNode;
   onClick?: () => void;
   icon?: ReactNode;
@@ -9,25 +8,47 @@ interface ButtonProps {
   height?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ background, children, onClick, icon, width, height }) => {
+const GradientButton: React.FC<ButtonProps> = ({
+  children,
+  onClick,
+  icon,
+  width,
+  height,
+}) => {
+  const gradient = {
+    background: "linear-gradient(-45deg,  #FFD700, #DF6464)",
+  };
+
   const buttonStyle: CSSProperties = {
-    backgroundColor: background,
+    ...gradient,
     width: width,
     height: height,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    border: 'none',
-    borderRadius: '4px',
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
+    border: "none",
+    borderRadius: "8px",
+    color: "#ffffff", // Set text color to white or a contrasting color
   };
 
   return (
-    <button className="px-8 py-[10px] text-white bg-blue-500 font-bold" style={buttonStyle} onClick={onClick}>
+    <motion.button
+    whileHover={{
+      background: "black",
+      scale: 1.1
+    }}
+    whileTap={{
+      scale: 0.95
+    }}
+      className="px-8 py-[15px] font-bold"
+      style={buttonStyle}
+      onClick={onClick}
+    >
       {children}
-      {icon && <span className="ml-2">{icon}</span>}
-    </button>
+      {icon && <span className="ml-6">{icon}</span>}
+    </motion.button>
   );
 };
 
-export default Button;
+export default GradientButton;

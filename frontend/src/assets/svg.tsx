@@ -120,3 +120,20 @@ export const ArrowSvg = () => {
     </svg>
   );
 };
+
+export const FrontIcon = () => {
+  return (
+    <svg
+      width="34"
+      height="33"
+      viewBox="0 0 34 33"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17 5.5L15.0613 7.43875L22.7337 15.125H6V17.875H22.7337L15.0613 25.5613L17 27.5L28 16.5L17 5.5Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
