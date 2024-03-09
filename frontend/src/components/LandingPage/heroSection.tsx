@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { ArrowSvg } from "../../assets/svg";
+import Button from "../global/button";
 
 interface HeroTextAndCTAProps {
   children: ReactNode;
@@ -19,7 +20,7 @@ export const HeroText = () => {
 
 export const HeroCTA = () => {
   return (
-    <div className="flex w-[590px] flex-col gap-[50px]">
+    <div className="flex w-[590px] flex-col gap-[40px]">
       <p className="w-[90%] text-black mt-6 leading-normal">
         Spreading Joy, One Bite at a Time. Welcome to the heart and soul of
         delicious dining in Naija style! Dive into a world where flavor dances,
@@ -27,6 +28,7 @@ export const HeroCTA = () => {
       </p>
       <div className="flex items-center gap-4">
         <ArrowSvg />
+        <Button>Hello</Button>
       </div>
     </div>
   );
