@@ -34,13 +34,10 @@ const States: OverLayState[] = [
 
 
 export const LandingPage = () => {
-  const [modal, setModal] = useState(true);
-  const [activeState, setActiveState] = useState<OverLayState | null>(States[1]);
+  const [activeState, setActiveState] = useState<OverLayState | null>(States[0]);
 
 
-  const CloseModal = () => handleCloseModal(setModal, setActiveState);
-
-
+  const CloseModal = () => handleCloseModal(setActiveState);
 
   
   const Modal = ({
@@ -53,14 +50,16 @@ export const LandingPage = () => {
     return (
       <OverLay>
         {activeState?.component}
-        <button onClick={onClose}>Close Modal</button>
+
       </OverLay>
     );
   };
 
+
+
   return (
     <AppSection>
-      {modal && <Modal activeState={activeState} onClose={CloseModal} />}
+      {activeState !== null && <Modal activeState={activeState} onClose={CloseModal} />}
       <NavigationBar />
       <HeroTextAndCTA>
         <HeroText />

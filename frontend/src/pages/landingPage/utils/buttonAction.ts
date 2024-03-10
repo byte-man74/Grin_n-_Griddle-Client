@@ -1,4 +1,3 @@
-export const handleCloseModal = (setModal: Function, setActiveState: Function) => {
-    setModal(false);
+export const handleCloseModal = (setActiveState: Function) => {
     setActiveState(null);
 };
