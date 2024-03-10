@@ -18,23 +18,25 @@ import { handleCloseModal } from "./utils/buttonAction";
 
 
 
-const States: OverLayState[] = [
-  {
-    index: 1,
-    name: "SIGN UP",
-    component: <SignUpComponent />,
-  },
-  {
-    index: 2,
-    name: "LOGIN",
-    component: <LoginComponent />,
-  },
-];
 
 
 
 export const LandingPage = () => {
-  const [activeState, setActiveState] = useState<OverLayState | null>(States[0]);
+  const [activeState, setActiveState] = useState<OverLayState | null>(null);
+
+  const States: OverLayState[] = [
+    {
+      index: 1,
+      name: "SIGN UP",
+      component: <SignUpComponent setActiveState={setActiveState}/>,
+    },
+    {
+      index: 2,
+      name: "LOGIN",
+      component: <LoginComponent setActiveState={setActiveState}/>,
+    },
+  ];
+  
 
 
   const CloseModal = () => handleCloseModal(setActiveState);
@@ -42,7 +44,6 @@ export const LandingPage = () => {
   
   const Modal = ({
     activeState,
-    onClose,
   }: {
     activeState: OverLayState | null;
     onClose: () => void;
@@ -50,7 +51,6 @@ export const LandingPage = () => {
     return (
       <OverLay>
         {activeState?.component}
-
       </OverLay>
     );
   };

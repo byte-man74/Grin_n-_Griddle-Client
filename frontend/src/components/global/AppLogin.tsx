@@ -1,5 +1,11 @@
+import React from "react";
 
-const LoginComponent = () => {
+
+interface LoginProps {
+    setActiveState: Function
+}
+
+const LoginComponent: React.FC <LoginProps> = () => {
     return <div>Login Content</div>;
   };
  
