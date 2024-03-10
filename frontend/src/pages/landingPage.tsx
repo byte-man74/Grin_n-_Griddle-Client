@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 import AppSection from "../components/AppSection";
 import { NavigationBar } from "../components/Navigate";
 import HeroTextAndCTA, {
@@ -7,7 +7,7 @@ import HeroTextAndCTA, {
 } from "../components/LandingPage/heroSection";
 import { LandingPageImage } from "../components/LandingPage/landingPageImage";
 import { OverLay } from "../components/global/overlay";
-
+import { OverLayState } from "../components/global/types";
 
 
 
@@ -22,11 +22,7 @@ const LoginComponent = () => {
 };
 
 
-interface OverLayState {
-  index: number;
-  name: string;
-  component: ReactNode;
-}
+
 
 const States: OverLayState[] = [
   {
