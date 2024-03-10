@@ -1,25 +1,19 @@
 import React, { useState } from "react";
-import AppSection from "../components/AppSection";
-import { NavigationBar } from "../components/Navigate";
+import AppSection from "../../components/AppSection";
+import { NavigationBar } from "../../components/Navigate";
 import HeroTextAndCTA, {
   HeroCTA,
   HeroText,
-} from "../components/LandingPage/heroSection";
-import { LandingPageImage } from "../components/LandingPage/landingPageImage";
-import { OverLay } from "../components/global/overlay";
-import { OverLayState } from "../components/global/types";
+} from "../../components/LandingPage/heroSection";
+import { LandingPageImage } from "../../components/LandingPage/landingPageImage";
+import { OverLay } from "../../components/global/overlay";
+import { OverLayState } from "../../components/global/types";
+import SignUpComponent from "../../components/global/AppSignUp";
+import LoginComponent from "../../components/global/AppLogin";
+import { handleCloseModal } from "./utils/buttonAction";
 
 
 
-
-
-const SignUpComponent = () => {
-  return <div className="w-[300px] h-[200px] bg-white text-black">Sign Up Content</div>;
-};
-
-const LoginComponent = () => {
-  return <div>Login Content</div>;
-};
 
 
 
@@ -37,16 +31,18 @@ const States: OverLayState[] = [
   },
 ];
 
+
+
 export const LandingPage = () => {
   const [modal, setModal] = useState(true);
-  const [activeState, setActiveState] = useState<OverLayState | null>(States[0]);
+  const [activeState, setActiveState] = useState<OverLayState | null>(States[1]);
+
+
+  const CloseModal = () => handleCloseModal(setModal, setActiveState);
 
 
 
-  const handleCloseModal = () => {
-    setModal(false);
-    setActiveState(null);
-  };
+  
   const Modal = ({
     activeState,
     onClose,
@@ -64,7 +60,7 @@ export const LandingPage = () => {
 
   return (
     <AppSection>
-      {modal && <Modal activeState={activeState} onClose={handleCloseModal} />}
+      {modal && <Modal activeState={activeState} onClose={CloseModal} />}
       <NavigationBar />
       <HeroTextAndCTA>
         <HeroText />
