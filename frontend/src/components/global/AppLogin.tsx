@@ -10,7 +10,7 @@ interface LoginProps {
 
 const LoginComponent: React.FC<LoginProps> = ({ setActiveState }) => {
   return (
-    <div className="w-[550px] min-h-[200px] rounded-md p-4 bg-white text-primaryDark">
+    <div className="w-[550px] min-h-[200px] md:w-full md:h-screen rounded-md p-4 bg-white text-primaryDark md:rounded-none">
       {/* modal header */}
       <div className="flex items-center justify-between ">
         <div className="flex flex-col gap-[4px]">
