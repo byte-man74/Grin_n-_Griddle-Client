@@ -55,7 +55,7 @@ const SignUpComponent: React.FC<SignUpProps> = ({ setActiveState }) => {
   );
 };
 
-const Cancel: React.FC<SignUpProps> = ({ setActiveState }) => {
+export const Cancel: React.FC<SignUpProps> = ({ setActiveState }) => {
   return (
     <motion.div
       whileHover={{ scale: 0.75, backgroundColor: "#FF6F61" }}
