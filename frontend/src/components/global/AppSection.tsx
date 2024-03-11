@@ -27,7 +27,7 @@ const AppSection: React.FC<AppSectionProps> = ({ children }) => {
 
 
   useEffect(() => {
-    setActiveState(States[1])
+    setActiveState(States[0])
   }, [])
 
 
