@@ -36,7 +36,7 @@ const GradientButton: React.FC<ButtonProps> = ({
     <motion.button
     whileHover={{
       background: "black",
-      scale: 1.1
+      scale: 0.9
     }}
     whileTap={{
       scale: 0.95
