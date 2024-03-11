@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundPrimary: '#F6E4D6'
+        backgroundPrimary: '#F6E4D6',
+        primaryDark: '#373737'
       },
       screens: {
         '2xl': {'max': '1535px'},

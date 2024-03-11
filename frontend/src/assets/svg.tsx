@@ -169,3 +169,23 @@ export const MenuSvg = () => {
     </svg>
   );
 };
+
+export const CancelSvg = () => {
+  return (
+    <svg
+      width="55"
+      height="55"
+      viewBox="0 0 55 55"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.4868 39.5152L27.502 27.5L39.5172 39.5152M39.5172 15.4848L27.4997 27.5L15.4868 15.4848"
+        stroke="black"
+        stroke-width="3.4375"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
