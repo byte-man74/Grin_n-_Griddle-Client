@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { OverLayState } from "./types";
 import SignUpComponent from "./AppSignUp";
 import { OverLay } from "./overlay";
@@ -24,6 +24,13 @@ const AppSection: React.FC<AppSectionProps> = ({ children }) => {
       component: <LoginComponent setActiveState={setActiveState} />,
     },
   ];
+
+
+  useEffect(() => {
+    setActiveState(States[0])
+  }, [])
+
+
 
   const CloseModal = () => handleCloseModal(setActiveState);
 

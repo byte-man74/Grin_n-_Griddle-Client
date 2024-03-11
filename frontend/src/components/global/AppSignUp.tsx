@@ -5,7 +5,7 @@ interface SignUpProps {
 
 const SignUpComponent: React.FC<SignUpProps> = () => {
   return (
-    <div className="w-[300px] h-[200px] bg-white text-black">
+    <div className="w-[550px] min-h-[200px] bg-white text-black">
       Sign Up Content
     </div>
   );
