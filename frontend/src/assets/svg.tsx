@@ -173,8 +173,8 @@ export const MenuSvg = () => {
 export const CancelSvg = () => {
   return (
     <svg
-      width="55"
-      height="55"
+      width="45"
+      height="45"
       viewBox="0 0 55 55"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
