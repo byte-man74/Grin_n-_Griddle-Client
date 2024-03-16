@@ -7,18 +7,7 @@ import HeroTextAndCTA, {
 } from "../../components/LandingPage/heroSection";
 import { LandingPageImage } from "../../components/LandingPage/landingPageImage";
 
-
-
-
-
-
-
-
-
-
 export const LandingPage = () => {
-
-
   return (
     <AppSection>
       <NavigationBar />
