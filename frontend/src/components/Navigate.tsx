@@ -83,6 +83,6 @@ export const NavigationBar: React.FC = () => (
         <NavigationLink key={index} data={item} />
       ))}
     </div>
-    <div className="fixed left-0 top-0 z-10 w-full h-screen bg-red-500"></div>
+    {/* <div className="fixed left-0 top-0 z-10 w-full h-screen bg-red-500"></div> */}
   </div>
 );
