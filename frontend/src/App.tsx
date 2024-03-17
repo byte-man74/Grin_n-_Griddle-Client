@@ -1,9 +1,9 @@
 import React from "react";
-import { LandingPage } from "./pages/landingPage/index";
+import { MarketPage } from "./pages/marketPage";
 
 function App() {
   return (
-    <LandingPage />
+    <MarketPage />
   );
 }
 
