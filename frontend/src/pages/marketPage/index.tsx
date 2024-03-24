@@ -15,11 +15,11 @@ export const MarketPage: React.FC = () => {
 
 const SearchContainer: React.FC = () => {
   return (
-    <div className="min-w-[40px] mr-auto ml-[5%] relative min-h-[20px] mt-[70px] md:w-[90%] md:ml-auto">
+    <div className="min-w-[40px] mr-auto ml-[5%] relative min-h-[20px] mt-[70px] md:mt-0 md:w-[100%] md:ml-auto">
       <input
         type="text"
         placeholder="Search drinks and food"
-        className="rounded-md text-md border-gray-400 border-[1px] md:w-[100%] border-solid pl-4 outline-none  h-[50px] w-[500px]"
+        className="rounded-md md:rounded-none text-md border-gray-400 border-[1px] md:w-[100%] border-solid pl-4 outline-none  h-[50px] w-[500px]"
       />
       <div className="flex justify-center items-center absolute top-[13px] right-4">
         <SearchSvg />
@@ -42,7 +42,7 @@ const FoodContainer: React.FC = () => {
 
 const FoodItemBox: React.FC = () => {
   return (
-    <div className="w-[305px] h-[280px] bg-white relative rounded-md overflow-hidden">
+    <div className="w-[305px] h-[280px] bg-white relative rounded-md overflow-hidden md:w-[90%]">
       <div className="w-full h-[80%] z-10 absolute top-0 left-0 bg-black bg-opacity-35"></div>
       <img
         src="https://i.pinimg.com/564x/06/33/1a/06331aa2e07ca09d0ced090c22f51f64.jpg"
