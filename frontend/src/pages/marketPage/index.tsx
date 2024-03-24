@@ -15,11 +15,11 @@ export const MarketPage: React.FC = () => {
 
 const SearchContainer: React.FC = () => {
   return (
-    <div className="min-w-[40px] mr-auto ml-[5%] relative min-h-[20px] mt-[70px]">
+    <div className="min-w-[40px] mr-auto ml-[5%] relative min-h-[20px] mt-[70px] md:w-[90%] md:ml-auto">
       <input
         type="text"
         placeholder="Search drinks and food"
-        className="rounded-md text-md border-gray-400 border-[1px] border-solid pl-4 outline-none  h-[50px] w-[500px]"
+        className="rounded-md text-md border-gray-400 border-[1px] md:w-[100%] border-solid pl-4 outline-none  h-[50px] w-[500px]"
       />
       <div className="flex justify-center items-center absolute top-[13px] right-4">
         <SearchSvg />
@@ -30,7 +30,7 @@ const SearchContainer: React.FC = () => {
 
 const FoodContainer: React.FC = () => {
   return (
-    <div className="w-[90%] flex-wrap justify-between min-h-10 mt-10 flex gap-y-10">
+    <div className="w-[90%] flex-wrap justify-between min-h-10 mt-10 flex gap-y-10 pb-14 gap-x-4 md:justify-center">
       <FoodItemBox />
       <FoodItemBox />
       <FoodItemBox />
